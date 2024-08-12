@@ -1,0 +1,19 @@
+[33mcommit b1625db50a3d73a16d62a37a6fe7d2fe7709e31d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: rashid23 <rashid23>
+Date:   Mon Aug 12 09:12:49 2024 +0400
+
+    Almost finished
+
+[33mcommit 074d390aa5754b13ae1fccd78d103fd389b1fb9d[m[33m ([m[1;31mbit/main[m[33m)[m
+Author: rashid23 <rashid23>
+Date:   Thu Aug 8 17:01:39 2024 +0400
+
+    Added new feature
+
+[33mcommit 038367b4a5f5858ee04daa062d5f5e18e4c0a806[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: rashid23 <rashid23>
+Date:   Thu Aug 8 13:32:02 2024 +0400
+
+    finished with static files and urls.
+    
+    New task is to finished back-end models to front
