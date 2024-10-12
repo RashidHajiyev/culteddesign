@@ -1,0 +1,122 @@
+.contact {
+  margin-top: 110px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact__socialmedia {
+  width: 401px;
+}
+
+.contact__socialmedia p {
+  color: #989898;
+  font-size: 22px;
+}
+
+.contact__img {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.contact-form {
+  background: #222222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 39%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  /* font-weight: bold; */
+  font-size: 19px;
+}
+
+.form-group input,
+.form-group textarea {
+  background: #222222;
+  width: 100%;
+  padding: 10px;
+  /* border: none; */
+  border: 1px solid #353535;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.form-group textarea {
+  resize: none;
+  max-height: 250px;
+  min-height: 50px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  overflow-y: auto;
+  /* border-bottom-color: #007bff; */
+}
+
+.form-group textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+.form-group textarea::-webkit-scrollbar-track {
+  background: #222222;
+}
+
+.form-group textarea::-webkit-scrollbar-thumb {
+  background: #989898;
+}
+
+.form-group textarea::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.form-btn {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px; */
+  background: #222222;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #353535;
+  /* color: #989898; */
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-btn:hover{
+  background-color: #ae7933;
+  transition: 0.3s;
+}
+
+.form-btn img {
+  width: 22px;
+}
+
+/* Удаление цвета фона ввода для автозаполнения Chrome */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #222222 inset !important;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+}
+
+.char-counter {
+  display: flex;
+  justify-content: end;
+  color: #989898;
+}

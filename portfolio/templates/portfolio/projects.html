@@ -1,0 +1,98 @@
+<!DOCTYPE html>{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="{% static 'portfolio/css/normalize.css' %}" />
+    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'portfolio/css/header.css' %}" />
+    <link rel="stylesheet" href="{% static 'portfolio/css/projets/projects.css' %}" />
+    <link rel="stylesheet" href="{% static 'portfolio/css/contact/contact.css' %}" />
+    <link rel="stylesheet" href="{% static 'portfolio/css/media.css' %}" />
+  </head>
+  <body>
+    <header class="container header">
+      <div class="header__main">
+        <img src="{% static 'portfolio/media/Logo culteddesign.svg' %}" alt="" />
+        <ul class="header__list">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'home' %}#services">Services</a></li>
+          <li><a href="{% url 'projects' %}" class="active">Projects</a></li>
+          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+      </div>
+      <div class="header__body">
+        <img src="{% static 'portfolio/media/Logo culteddesign.svg' %}" alt="" />
+        <button class="header__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="header__menu">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'home' %}#services">Services</a></li>
+          <li><a href="{% url 'projects' %}" class="active">Projects</a></li>
+          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+      </div>
+    </header>
+
+
+    <div class="container project">
+        {% for project in projects %}
+      <div class="project__container">
+        <div class="project__about">
+          <h1>{{ project.name }}</h1>
+          <p>{{ project.description }}</p>
+          <div class="project__about--btn">
+            <a href="{{ project.website_link }}">View website</a>
+            <a href="">
+              <img src="{% static 'portfolio/media/projects/arrow.svg' %}" alt="Arrow icon" />
+            </a>
+          </div>
+        </div>
+        <div class="project__media">
+          <img src="{{ project.photos.url }}" alt="Project Mockup" />
+        </div>
+      </div>
+        {% endfor %}
+    </div>
+    
+
+
+
+    <div class="container contact" id="contact">
+      <div class="contact__socialmedia">
+        <h1>Get in touch</h1>
+        <p>
+          Let’s connect and discuss how I can bring your ideas to life through
+          creative and compelling design.
+        </p>
+        <div class="contact__img">
+          <a href="https://www.instagram.com/aichurok_zk/"
+            ><img src="{% static 'portfolio/media/contact/inst.svg' %}" alt=""
+          /></a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=97450771187&text&type=phone_number&app_absent=0"
+            ><img src="{% static 'portfolio/media/contact/wp.svg' %}" alt=""
+          /></a>
+          <a href="https://t.me/aichurokzk"
+            ><img src="{% static 'portfolio/media/contact/teleg.svg' %}" alt=""
+          /></a>
+          <a href="https://www.behance.net/aichurokkyzy"
+            ><img src="{% static 'portfolio/media/contact/be.svg' %}" alt=""
+          /></a>
+        </div>
+      </div>
+
+      {% include 'partials/feedback.html' %}
+
+    </div>
+
+    <script src="{% static 'portfolio/js/burger.js' %}"></script>
+    <script src="{% static 'portfolio/js/textarea.js' %}"></script>
+  </body>
+</html>

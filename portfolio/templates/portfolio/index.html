@@ -1,0 +1,198 @@
+<!DOCTYPE html>{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'portfolio/css/normalize.css' %}" />
+    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'portfolio/css/header.css' %}" />
+    <link rel="stylesheet" href="{% static 'portfolio/css/home/home.css' %}" /> 
+    <link rel="stylesheet" href="{% static 'portfolio/css/portfolio/slider.css' %}" />
+    <link rel="stylesheet" href="{% static 'portfolio/css/contact/contact.css' %}" />
+    <link rel="stylesheet" href="{% static 'portfolio/css/media.css' %}" />
+          <link rel="stylesheet" href="{% static 'portfolio/css/projets/projects.css' %}" />
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__main">
+        <img src="{% static 'portfolio/media/Logo culteddesign.svg' %}" alt="" />
+        <ul class="header__list">
+          <li><a href="{% url 'home' %}" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="{% url 'projects' %}">Projects</a></li>
+          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+      </div>
+      <div class="header__body">
+        <img src="{% static 'portfolio/media/Logo culteddesign.svg' %}" alt="" />
+        <button class="header__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="header__menu">
+          <li><a href="{% url 'home' %}" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="{% url 'projects' %}">Projects</a></li>
+          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="container info">
+      <div class="info__text">
+        <div class="info__presentation">
+          <div class="info__presentation--text">
+            <p>Hello! I'm Aichurok,</p>
+            <h1>Product / UI / UX Designer</h1>
+          </div>
+          <div class="info__picture" id="picture__mob"></div>
+          <img src="{% static 'portfolio/media/home/info.jpg' %}" alt="">
+        </div>
+        <div class="info__about">
+          {% for user_description in user_descriptions %}
+          <p>
+            {{ user_description.description }}
+          </p>
+          <p>
+            {{ user_description.tools }}
+          </p>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="info__picture" id="picture__device"></div>
+    </div>
+    <div class="container services" id="services">
+      <h1>My services</h1>
+      <div class="services__containers">
+        <div class="services__box">
+          <img src="{% static 'portfolio/media/home/services/1.svg' %}" alt="" />
+          <div class="services__box--text">
+            <h2>UX | UI DESIGN</h2>
+            <p>User Research and Analysis</p>
+            <p>Custom User Experience Design</p>
+            <p>Web and Mobile App Designs</p>
+            <p>Wireframing and Prototyping</p>
+            <p>Information Architecture</p>
+            <p>Usability Testing</p>
+          </div>
+        </div>
+        <div class="services__box">
+          <img src="{% static 'portfolio/media/home/services/2.svg' %}" alt="" />
+          <div class="services__box--text">
+            <h2>Graphic Design</h2>
+            <p>Brand Identity Design</p>
+            <p>Print and digital Design</p>
+            <p>Publication Design</p>
+            <p>Illustration and Infographics</p>
+            <p>Advertising and Marketing</p>
+            <p>Collateral</p>
+          </div>
+        </div>
+        <div class="services__box">
+          <img src="{% static 'portfolio/media/home/services/3.svg' %}" alt="" />
+          <div class="services__box--text">
+            <h2>Product Design</h2>
+            <p>Sketching and Ideation</p>
+            <p>User Experience</p>
+            <p>User Interface</p>
+            <p>Design Strategy</p>
+            <p>Design for Accessibility and</p>
+            <p>Inclusivity</p>
+          </div>
+        </div>
+        <div class="services__box">
+          <img src="{% static 'portfolio/media/home/services/4.svg' %}" alt="" />
+          <div class="services__box--text">
+            <h2>Social Media</h2>
+            <p>Profile Optimization</p>
+            <p>Campaign Graphics</p>
+            <p>Consultation and Strategy</p>
+            <p>Story Highlights Icons</p>
+            <p>Event Promotion Graphics</p>
+            <p>Cover Photos and Headers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio">
+      <div class="container portfolio__title">
+        <h1>Portfolio</h1>
+        <div class="portfolio__btn">
+          <a href={% url 'projects' %}>See All</a>
+          <a href={% url 'projects' %}
+            ><img src="{% static 'portfolio/media/portfolio/arrow.svg' %}" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <img src="{% static 'portfolio/media/portfolio/slider/1.jpg' %}" alt="Image 1" />
+          </div>
+          <div class="slide">
+            <img src="{% static 'portfolio/media/portfolio/slider/2.jpg' %}" alt="Image 2" />
+          </div>
+          <div class="slide">
+            <img src="{% static 'portfolio/media/portfolio/slider/3.jpg' %}" alt="Image 3" />
+          </div>
+          <div class="slide">
+            <img src="{% static 'portfolio/media/portfolio/slider/4.jpg' %}" alt="Image 4" />
+          </div>
+          <div class="slide">
+            <img src="{% static 'portfolio/media/portfolio/slider/5.jpg' %}" alt="Image 5" />
+          </div>
+          <div class="slide">
+            <img src="{% static 'portfolio/media/portfolio/slider/6.jpg' %}" alt="Image 6" />
+          </div>
+          <div class="slide">
+            <img src="{% static 'portfolio/media/portfolio/slider/7.jpg' %}" alt="Image 7" />
+          </div>
+          <div class="slide">
+            <img src="{% static 'portfolio/media/portfolio/slider/8.jpg' %}" alt="Image 8" />
+          </div>
+          <div class="slide">
+            <img src="{% static 'portfolio/media/portfolio/slider/9.jpg' %}" alt="Image 9" />
+          </div>
+          <div class="slide">
+            <img src="{% static 'portfolio/media/portfolio/slider/10.jpg' %}" alt="Image 10" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container contact" id="contact">
+      <div class="contact__socialmedia">
+        <h1>Get in touch</h1>
+        <p>
+          Let’s connect and discuss how I can bring your ideas to life through
+          creative and compelling design.
+        </p>
+        <div class="contact__img">
+          <a href="https://www.instagram.com/aichurok_zk/"
+            ><img src="{% static 'portfolio/media/contact/inst.svg' %}" alt=""
+          /></a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=97450771187&text&type=phone_number&app_absent=0"
+            ><img src="{% static 'portfolio/media/contact/wp.svg' %}" alt=""
+          /></a>
+          <a href="https://t.me/aichurokzk"
+            ><img src="{% static 'portfolio/media/contact/teleg.svg' %}" alt=""
+          /></a>
+          <a href="https://www.behance.net/aichurokkyzy"
+            ><img src="{% static 'portfolio/media/contact/be.svg' %}" alt=""
+          /></a>
+        </div>
+      </div>
+
+      {% include 'partials/feedback.html' %}
+
+    </div>
+
+    <script src="{% static 'portfolio/js/slider.js' %}"></script>
+    <script src="{% static 'portfolio/js/burger.js' %}"></script>
+    <script src="{% static 'portfolio/js/textarea.js' %}"></script>
+  </body>
+</html>
