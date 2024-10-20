@@ -4,11 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91408c6c-9af6-4ba9-9557-8dbd468211fc" name="Changes" comment="" />
+    <list default="true" id="91408c6c-9af6-4ba9-9557-8dbd468211fc" name="Changes" comment="Finished backend, only need to change in front">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/static/portfolio/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/static/portfolio/css/media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/static/portfolio/css/projets/projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/static/portfolio/css/projets/projects.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/templates/portfolio/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -36,6 +52,8 @@
   &quot;keyToString&quot;: {
     &quot;Django Server.culteddesign.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.projects.html.executor&quot;: &quot;Run&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Database detector&quot;: &quot;Database detector&quot;,
+    &quot;Notification.DoNotAsk-Database detector&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
@@ -117,11 +135,36 @@
       <workItem from="1728679067604" duration="220000" />
       <workItem from="1728679332198" duration="2889000" />
       <workItem from="1728684490421" duration="43000" />
-      <workItem from="1728728568108" duration="2366000" />
+      <workItem from="1728728568108" duration="6502000" />
+      <workItem from="1728822151471" duration="13000" />
+      <workItem from="1728898875853" duration="31000" />
+      <workItem from="1729076617527" duration="2226000" />
+      <workItem from="1729090861918" duration="1260000" />
+      <workItem from="1729092338268" duration="3215000" />
+      <workItem from="1729117736773" duration="2265000" />
+      <workItem from="1729122386951" duration="3575000" />
+      <workItem from="1729169238841" duration="37000" />
+      <workItem from="1729205611343" duration="2081000" />
+      <workItem from="1729454109397" duration="52000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finished backend, only need to change in front" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished backend, only need to change in front" />
   </component>
 </project>

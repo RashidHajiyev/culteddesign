@@ -24,31 +24,39 @@ def home(request): #home page with description
     return render(request, 'portfolio/index.html', {'form': form})
 
 
-# def projects(request):  #projects view
-#     projects = Project.objects.all()
-#     return render(request, 'portfolio/projects.html', {'projects': projects})
-# #    return render(request, 'portfolio/projects.html')
-
 def projects(request):
-    projects = Project.objects.all()
-    return render(request, 'portfolio/projects.html', {'projects': projects})
+    if request.method == 'GET':
+        projects = Project.objects.all()
+        return render(request, 'portfolio/projects.html', {'projects': projects})
+
+    if request.method == "POST":
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()  # Save the form data to the Customer model
+            messages.success(request, "Your message has been sent successfully!")
+            return redirect('projects')  # Redirect back to the contact form page or another page
+        else:
+            messages.error(request, "There was an error in your submission.")
+    else:
+        form = ContactForm()
+
+    return render(request, 'portfolio/projects.html', {'form': form})
 
 
-def portfolio_view(request): # protfolio view
-    portfolio = Portfolio.objects.all()
-    return render(request, 'portfolio/portfolio.html', {'portfolio': portfolio})
+def portfolio(request): # portfolio view
+    if request.method == 'GET':
+        portfolio = Portfolio.objects.all()
+        return render(request, 'portfolio/portfolio.html', {'portfolio': portfolio})
 
+    if request.method == "POST":
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()  # Save the form data to the Customer model
+            messages.success(request, "Your message has been sent successfully!")
+            return redirect('portfolio')  # Redirect back to the contact form page or another page
+        else:
+            messages.error(request, "There was an error in your submission.")
+    else:
+        form = ContactForm()
 
-# def contact(request):
-#     if request.method == "POST":
-#         form = ContactForm(request.POST)
-#         if form.is_valid():
-#             form.save()  # Save the form data to the Customer model
-#             messages.success(request, "Your message has been sent successfully!")
-#             return redirect('contact')  # Redirect back to the contact form page or another page
-#         else:
-#             messages.error(request, "There was an error in your submission.")
-#     else:
-#         form = ContactForm()
-#
-#     return render(request, 'contact.html', {'form': form})
+    return render(request, 'portfolio/portfolio.html', {'form': form})

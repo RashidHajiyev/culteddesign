@@ -5,7 +5,7 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 70px;
 }
 
 .project__container{
@@ -13,9 +13,6 @@
   justify-content: space-between;
 }
 
-.project__about {
-  width: 525px;
-}
 
 .project__about p {
   font-size: 21px;
@@ -37,4 +34,12 @@
 .project__about--btn a:first-of-type:hover {
   background-color: #ae7933;
   transition: 0.4s;
+}
+
+.project__media img{
+  width: 500px;
+}
+
+.project__about {
+  width: 561px;
 }

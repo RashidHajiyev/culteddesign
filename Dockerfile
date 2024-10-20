@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     libpq-dev gcc
 
 # Copy the current directory contents into the container at /app
-COPY ../.. /app
+COPY . /app
 #COPY . /usr/src/app/
 
 # Upgrade pip to the latest version
@@ -26,4 +26,4 @@ ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
 
 # Command to run the Django application
-CMD ["python", "website/manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

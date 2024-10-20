@@ -8,7 +8,7 @@ urlpatterns = [
     path('home/', lambda request: redirect('')),
 
     path('projects/', views.projects, name='projects'),
-    path('portfolio/', views.portfolio_view, name='portfolio'),
+    path('portfolio/', views.portfolio, name='portfolio'),
 ]
 
 # path('feedback/', views.feedback_view, name='feedback'),

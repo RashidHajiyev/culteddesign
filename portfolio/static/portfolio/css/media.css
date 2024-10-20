@@ -69,6 +69,14 @@
     gap: 20px;
     /* width: 660px; */
   }
+
+  .project__media img {
+    width: 446px;
+  }
+  .project__about {
+    width: 450px;
+  }
+
   .portfolio__container {
     width: 658px;
     margin: auto;
