@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91408c6c-9af6-4ba9-9557-8dbd468211fc" name="Changes" comment="Finished backend, only need to change in front">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/static/portfolio/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/static/portfolio/css/media.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/static/portfolio/css/projets/projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/static/portfolio/css/projets/projects.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/templates/portfolio/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="91408c6c-9af6-4ba9-9557-8dbd468211fc" name="Changes" comment="Finished backend, only need to change in front" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,6 +135,7 @@
       <workItem from="1729169238841" duration="37000" />
       <workItem from="1729205611343" duration="2081000" />
       <workItem from="1729454109397" duration="52000" />
+      <workItem from="1730029442573" duration="1084000" />
     </task>
     <servers />
   </component>
