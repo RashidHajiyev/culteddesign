@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-%*^fkk#t$_@3$t1b%h7txhzm)hb9@5vmrt1!nj&$7g8x9+f3b(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.culteddesign.com', 'culteddesign.com', 'localhost']
 
 
 # Application definition
@@ -107,8 +107,16 @@ USE_TZ = True
 
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'portfolio/static')
-STATIC_URL = '/static/'
+
+STATIC_URL = 'static/'
+
+STATIC_ROOT = BASE_DIR / 'static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "portfolio/static",  # Or the path to your static directory
+]
+
+
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 MEDIA_URL = '/uploads/'

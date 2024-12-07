@@ -1,0 +1,45 @@
+.project {
+  margin-top: 102px;
+  background-color: #2b2b2b;
+  padding: 27px 66px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.project__container{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.project__about p {
+  font-size: 21px;
+  color: #989898;
+}
+
+.project__about--btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project__about--btn a:first-of-type {
+  padding: 10px 18px;
+  border-radius: 25px;
+  border: 1px #989898 solid;
+}
+
+.project__about--btn a:first-of-type:hover {
+  background-color: #ae7933;
+  transition: 0.4s;
+}
+
+.project__media img{
+  width: 500px;
+}
+
+.project__about {
+  width: 561px;
+}
